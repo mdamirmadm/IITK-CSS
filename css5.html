@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			padding: 0px;
+			background-color: #000000;
+			color:yellow;
+		}
+		form{
+			position:absolute;
+			top: 60px;
+			left:500px;
+			width:540px;
+			height:600px;
+			border:2px solid white;
+			background-color: #212f3d;
+		}
+		table{
+			width:100%;
+			padding: 45px;
+		}
+		.label{
+			color:yellow;
+			text-align:right;
+		}
+		#form-title{
+			position:absolute;
+			top:0px;
+			background-color: yellow;
+			height:40px;
+			width:100%;
+			color:#000000;
+		}
+		#form-footer{
+			background-color: yellow;
+			height:50px;
+			text-align:right;
+			line-height: 30px;
+		}
+		input{
+			margin:5px 0px 5px 10px;
+			border-radius:3px;
+			border-width:0px;
+		}
+		.form-input{
+			width:300px;
+			height:30px;
+		}
+		select{
+			border-radius:3px;
+			border-width:0px; 
+			margin:5px 0px 5px 10px;
+			height:30px;
+
+		}
+
+		#submit-button{
+			background-color: green;
+			width:80px;
+			height: 30px;
+			color:white;
+			margin:10px;
+		}
+
+		#cancel-button{
+			background-color: red;
+			width:80px;
+			height: 30px;
+			color:white;
+			margin-right:10px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div id="form-title"><h3>Sign Up</h3></div>
+		<table>
+			<tr><td class="label">First Name</td><td><input class="form-input" type="text" placeholder="Enter First Name"></td></tr>
+			<tr><td class="label">Last Name</td><td><input type="text" class="form-input" placeholder="Enter Last Name"></td></tr>
+			<tr><td class="label">Screen Name</td><td><input type="text" class="form-input" placeholder="Enter Screen Name"></td></tr>
+			<tr><td class="label">Date of Birth</td>
+				<td><select style="width:100px; padding-left: 20px;">
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+					<select style="width:70px; padding-left:20px;">
+						<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+					</select>
+					<select style="width:100px; padding-left: 30px;">
+						<option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option><option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option><option>1989</option><option>1988</option><option>1987</option><option>1986</option><option>1985</option><option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option>
+					</select>
+					</td>
+				</tr>
+					<tr><td class="label">Gender</td>
+			<td><input type="radio" name="gender">Male
+				<input type="radio" name="gender">Female</td></tr>
+			<tr><td class="label">Country</td>
+				<td><select class="form-input">
+						<option>India</option>
+						<option>USA</option>
+						<option>England</option>
+					</select></td></tr>
+			<tr><td class="label">Email</td><td><input type="text" class="form-input" placeholder="Enter Email"></td></tr>
+			<tr><td class="label">Phone</td><td><input type="number" class="form-input" placeholder="Enter Phone"></td></tr>
+			<tr><td class="label">Password</td><td><input type="password" class="form-input"></td></tr>
+			<tr><td class="label">Confirm Password</td><td><input type="password" class="form-input"></td></tr><br>
+			<tr align="center"><td colspan="2"><input type="checkbox"> &nbsp I agree to the Terms of Use</td></tr>
+		</table>
+		<div id="form-footer"><input type="button" id="submit-button" value="Submit">
+			<input type="button" id="cancel-button" value="Cancel">
+		</div>
+	</form>
+</body>
+</html>
